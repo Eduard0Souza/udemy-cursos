@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="login.php" autocomplete="on">
+        <label for="user">Usuário:</label>
+        <input type="email" name="usuario" id="user"><br>
+        <label for="senha">Senha:</label>
+        <input type="password"  nome="senha" id="senha"><br>
+        <input type="submit" value="Logar">
+    </form>
+
+    <h1>Cadastrar</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>Usuário: <input type="email" name="email" id="email"></p>
+        <p>Sexo: <br>
+        <input type="radio" name="sexo" id="M">Masculino <br>
+        <input type="radio" name="sexo" id="F">Feminino </p>
+
+        <p>Interesses</p>
+        <p><input type="checkbox" name="interesses" id="">Futebol <br>
+        <input type="checkbox" name="interesses" id="">Cursos <br>
+        <input type="checkbox" name="interesses" id="">Moda</p>
+            <br><br>
+
+        <select name="estado" id="">
+            <option value="sp">SP</option>
+            <option value="mg">MG</option>
+            <option value="ms">MS</option>
+        </select>  <br> <br>
+        
+        Observações: <br>
+        <textarea name="campo" id=""></textarea><br>
+
+        <input type="submit" value="Cadastrar" >
+    </form>
+    
+</body>
+</html>
