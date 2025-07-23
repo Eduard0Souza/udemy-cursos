@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        #block{
+            border: ridge 5px black;
+            padding: 10px;
+        }
+        .bloco{
+            border: 2px solid red;           ;
+        }
+        #inline{
+            border: ridge 5px black;
+            padding: 10px;
+        }
+        .emlinha{
+            border: 2px solid blue;
+            display: inline;
+        }
+        .inblock{
+              border: 2px solid rgb(238, 255, 0);
+            display: inline-block;
+        }
+        #inline-block{
+            border: 5px ridge rgb(0, 0, 0);           ;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">
+        <h1>Elementos em bloco(block)</h1>
+        <h1 class="bloco">Bloco 1</h1>
+        <h1 class="bloco">Bloco 2</h1>
+        <h1 class="bloco">Bloco 3</h1>        
+    </div>
+    <div id="inline">
+        <h1>Elementos em linha(inline)</h1>
+        <h1 class="emlinha">Bloco 1</h1>
+        <h1 class="emlinha">Bloco 2</h1>
+        <h1 class="emlinha">Bloco 3</h1>  
+    </div>
+    <div id="inline-block">
+        <h1>Elementos em inline-block</h1>
+        <h1 class="inblock">Bloco 1</h1>
+        <h1 class="inblock">Bloco 2</h1>
+        <h1 class="inblock">Bloco 3</h1>  
+    </div>
+</body>
+</html>
