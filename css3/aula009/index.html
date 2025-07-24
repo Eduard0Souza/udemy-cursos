@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body{
+            background: #007fc7;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            background-color: white;
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+            position: relative;
+        }
+        div > h1{
+
+        }
+        div > p{
+            width: 300px;
+            padding: 10px;
+        }
+        .estatico{
+            border: 1px solid blue;
+        }
+        .relativa{
+            border: 1px solid red;
+            position: relative;
+            top: 10px;
+            left: 48px;
+            font-size: 0.8em;
+        }
+        .absoluta{
+            border:1px solid orange;
+            position: absolute;
+            top: 10px;
+            right: 80px;
+        }
+        #fixa{
+            border: 1px solid rgb(255, 255, 255);
+            position: fixed;
+            bottom: -10px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamento(Static, Relative, absolute e fixed)</h1>
+
+    <div id="container">
+        <h1>Posicionamento</h1>
+        <p class="estatico">1 Posicionamento Estático é utilizado como o padrão do elemento, nesse caso a posição é determinada pelo fluxo normal do documento. <strong>Esse parágrafo usa o Posicionamento estático.</strong></p>
+
+        <p class="relativa">2 Quando se usa o Posicionamento relativo, o elemento com esse atributo tem um deslocamento com base na sua posição inicial. Os parâmentros que podem ser utilizados com esse atributo sao: top, right, bottom e left. Cada um altera a posição em relação ao ponto inicial. <strong>Esse paragrafo usa Posicionamento relativo</strong>.</p>
+
+        <p class="absoluta">3 A posição absoluta remove o elemento do fluxo normal do documento e o posiciona em relação ao seu acestral mais próximo que etnha uma valor diferente de <strong>static</strong>, ou em relação ao documento inteiro se nenhum ancestral com posição definida for encontrado. <strong>Esse parágrafo usa posicionamento absoluto</strong>.</p>
+
+        <p id="fixa">4 Posicionamento fixo faz como que o elemento premaneça na mesma posição na janela do navegador independente do rolamento da página. Isso significa que, mesmo que o usuário role a página para cima ou para baixo, o elemento com posição fixa permanecerá visível no mesmo local. <strong>Esse parágrafo utiliza o posicionamento fixo</strong>.
+        </p>
+    </div>
+    
+</body>
+</html>
