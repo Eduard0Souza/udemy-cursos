@@ -4,7 +4,7 @@
     padding: 0px;
 }
 body{
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(236, 235, 235);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .cabecalho{
@@ -59,7 +59,7 @@ span{
     width: 250px;
     background-color: white;
     position: relative;
-    top: -1237px;
+    top: -1246px;
     left: 850px;
     padding: 10px;
 }
