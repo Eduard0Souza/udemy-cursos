@@ -10,10 +10,10 @@ body{
     min-width: 600px;
 }
 #marca{
-    height: 100px;
-    background: #9E9E9E;
+    height: 200px;
+    background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
     text-align: center;
-    line-height: 100px;
+    line-height: 200px;
 }
 #conteudo{
     width: 74%;
@@ -23,6 +23,10 @@ body{
     
     width: 61%;
     float: left;
+}
+img.img-noticia{
+    width: 99%;
+    padding: 1%;
 }
 #cont-sec{
    
