@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Estilizando Formulários</h1>
+    <form action="fomrulario.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Detalhes Contato</legend>
+             <label for="inome">Nome</label>
+             <input type="text" name="nome" id="inome"><br>
+             <label for="iemail">E-mail</label>
+             <input type="email" name="email" id="iemail"><br>
+             <label for="iurl">URL</label>
+             <input type="url" name="url" id="iurl">
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <input type="button" value="Enviar">
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+        
+            <input type="radio" name="lembrar" id="sim">
+            <label for="sim">SIM</label><br>
+            <input type="radio" name="lembrar" id="nao">
+            <label for="nao">NÃO</label>
+        </fieldset>
+       
+    </form>
+
+</body>
+</html>
