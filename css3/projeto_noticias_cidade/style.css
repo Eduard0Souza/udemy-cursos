@@ -73,29 +73,27 @@ body.foto #navegacao a#foto{
     float: left;
     margin: 0 0 20px -750px;
 }
-#tres-colunas #primario{
+#primario{
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background: blue;
+    
 }
 #duas-colunas #primario{
     width: 555px;
     float: left;
     margin: 0 0 20px 195px;
-    background: blue;
+    
 }
 #uma-coluna #primario{
-    width: 750px;
-   
+    width: 750px;   
     margin: 0 0 20px;
-    background: blue;
 }
 #secundario{
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
-    background: yellow;
+    
 }
 .caixa{
     margin: 10px 0;
@@ -147,6 +145,49 @@ input{
     border:  2px ridge #870529;
 
 }
+img.img-principal{
+    margin-top:5px ;
+    border: 2px solid black;
+}
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+.destaque h3{
+    background: #b10333;
+    color:#fff
+}
+.entrevista h3{
+    background: #de003e;
+    color:#fff
+}
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+#lista-noticias li a img{
+    float: left;
+    margin:5px;
+}
+#lista-noticias li a{
+    text-decoration: none;
+    
+}
+#lista-noticias li a h3{
+      font-size: 0.8em;
+      padding: 0;
+      color: #3e7ab9;
+}
+#lista-noticias li a p{
+    color: black;
+    font-size: 0.7em;
+}
+#lista-noticias li:hover{
+    background: #cccccc83;
+}
 
 #container-rodape{
     clear: both;
@@ -157,6 +198,7 @@ input{
     width: 750px;
     color: white;
     margin: 0 auto;
+    text-align: center;
     
     
 }
