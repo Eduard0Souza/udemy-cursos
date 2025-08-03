@@ -41,6 +41,17 @@ nav.navbar-transparente{
 .albuns{
     margin-bottom: 30px;
 }
+#recursos{
+    padding: 20px 0;
+
+
+}
+#recursos h3{
+    color: #9bf0e1;
+}
+#recursos h2, p{
+    color: white;
+}
 h1{
     font-weight: 900;
     letter-spacing: -0,05em;
