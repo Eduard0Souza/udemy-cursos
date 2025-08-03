@@ -30,6 +30,10 @@ nav.navbar-transparente{
 .capa{
     text-align: center;
 }
+.carousel-control-next, .carousel-control-prev{
+    width: 1%;
+
+}
 #servicos{
     background-color: white;
    
