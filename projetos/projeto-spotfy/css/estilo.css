@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html, body, #home{
     height: 100%;
+    overflow-x: hidden;
 }
 body{
     background: url(../imagens/capa.png), url(../imagens/ruido.png), linear-gradient(50deg,#ff4169, #7c26f8 );
@@ -31,9 +32,7 @@ nav.navbar-transparente{
 }
 #servicos{
     background-color: white;
-    padding-top:20px;
-    padding-bottom: 20px;
-
+   
 }
 #servicos h2, h3{
     color: #7c25f8;
@@ -41,16 +40,21 @@ nav.navbar-transparente{
 .albuns{
     margin-bottom: 30px;
 }
-#recursos{
+.caixa{
     padding: 20px 0;
-
-
 }
+
+
 #recursos h3{
     color: #9bf0e1;
 }
-#recursos h2, p{
+#recursos, #recursos h2{
     color: white;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
 }
 h1{
     font-weight: 900;
