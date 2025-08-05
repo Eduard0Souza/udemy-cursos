@@ -6,22 +6,37 @@
     <title>JS</title>
 </head>
 <body>
-    
-    <input type="text" id="nome" placeholder="digite seu nome">
-    <input type="submit" value="enviar" onclick="enviar()">
-    <h1 id="res"></h1>
-
+   
 
 
     <script>
-        function enviar(){
+        /*function enviar(){
         var res = document.getElementById('res');
         var nome = document.getElementById('nome').value;
         alert(`Olá ${nome}!`);
-        res = document.write(`<h1>Seja Bem-Vindo ${nome}<h1>`)
-    }
+        res = document.write(`<h1>Seja Bem-Vindo ${nome}<h1>`)5
+
+    }*/
+        //recursividade
+       /* var n = Number(prompt('digite o número que gostaria'))
+        function fatorial(n){
+        if (n==0){
+            return 1
+        }else{
+            return n * fatorial(n-1)
+        }
+        }
+        alert(fatorial(n))*/
+       
+        var altura = Number(prompt('Digite a Altura: '))
+        var largura = Number(prompt('Digite a Largura: '))
         
-        
+        function calcular(altura, largura){
+
+            return altura * largura
+        }
+       
+        alert(`A área total é ${calcular(altura,largura)}m²`)
     </script>
 </body>
 </html>
