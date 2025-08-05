@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=decivce-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+    <input type="text" id="nome" placeholder="digite seu nome">
+    <input type="submit" value="enviar" onclick="enviar()">
+    <h1 id="res"></h1>
+
+
+
+    <script>
+        function enviar(){
+        var res = document.getElementById('res');
+        var nome = document.getElementById('nome').value;
+        alert(`Olá ${nome}!`);
+        res = document.write(`<h1>Seja Bem-Vindo ${nome}<h1>`)
+    }
+        
+        
+    </script>
+</body>
+</html>
