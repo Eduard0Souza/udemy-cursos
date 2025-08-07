@@ -6,6 +6,30 @@
     <title>Eventos</title>
 </head>
 <body>
+    <h1>Clique no botão para mudar a cor da caixa</h1>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="verde()">Verde</button>
+    <button onclick="azul()">Azul</button>
+    <hr>
+
+    <div id="quadro" style="width: 400px; height: 400px; background-color: #ccc; border: 2px solid black">
+    </div>
+
+    <script>
+        function vermelho(){
+        const cor = document.getElementById('quadro');
+        cor.style.background="red";
+        }
+         function verde(){
+        const cor = document.getElementById('quadro');
+        cor.style.background="green";
+        }
+         function azul(){
+        const cor = document.getElementById('quadro');
+        cor.style.background="blue";
+        }
+
+    </script>
     
 </body>
 </html>
