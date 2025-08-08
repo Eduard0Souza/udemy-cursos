@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Array em JavaScript</h1> 
+    <p>Em JavaScript, um array é uma estrutura de dados que armazena uma coleção ordenada de valores, podendo ser de diferentes tipos, acessados por um índice. Arrays são utilizados para agrupar e manipular múltiplos dados de uma só vez, facilitando o desenvolvimento de aplicações.</p> 
+    <h2>Como declarar e usar arrays:</h2>
+
+    <p><strong>Declaração:</strong> Arrays podem ser declarados usando colchetes [] ou a função new Array(). 
+    Acesso: Os elementos do array são acessados por meio de seu índice (posição), começando em 0. 
+    <strong>Manipulação:</strong> JavaScript oferece diversos métodos para manipular arrays, como adicionar, remover, modificar e iterar sobre seus elementos. </p> 
+    <h2>Métodos de array:</h2>
+    <p>A linguagem possui diversos métodos nativos para trabalhar com arrays, como push, pop, shift, unshift, splice, slice, map, filter, reduce, entre outros.  </p> 
+    <h2>Exemplo:</h2>
+    <p> let frutas = ["maça", "banana", "laranja"]</p>
+    
+    <h2>Testando</h2>
+    <input type="text" id="texto">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+
+    <script>
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+        function adicionar(){
+            var objeto = document.getElementById('texto').value
+            if(objeto == '') {
+                alert('Digite algum objeto')
+            }else if( objetos.includes(objeto)){
+
+                alert('Objeto já adcionado')
+                document.getElementById('texto').value=''
+            }else{
+                alert('Adicionando na lista....')
+                objetos.push(objeto)
+                console.log(objetos)
+                document.getElementById('texto').value=''
+            }
+
+            //alert(objetos)
+        }
+        function ordenar(){
+            objetos.sort()
+            console.log(objetos)
+            alert('Ordenando...')
+        }
+
+    </script>
+
+</body>
+</html>
