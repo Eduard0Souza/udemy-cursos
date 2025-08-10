@@ -29,9 +29,7 @@ mosca.style.left = posicaox +'px'
 mosca.style.top = posicaoy + 'px'
 mosca.style.position = 'absolute'
 mosca.id ='mosca'
-mosca.onclick() = function(){
-    alert('cliacdo')
-}
+mosca.onclick = function(){this.remove()}
 document.body.appendChild(mosca)
 
 }
