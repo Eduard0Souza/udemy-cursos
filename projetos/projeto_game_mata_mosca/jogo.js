@@ -2,12 +2,41 @@
 var altura = 0
 var largura = 0
 var vidas = 1
+var tempo = 15
+var criaMoscaTempo = 1500
+
+var nivel = window.location.search
+nivel.replace('?','')
+
+if(nivel === 'normal'){
+    criaMoscaTempo = 1500
+
+}else if(nivel ==='dificil'){
+    criaMoscaTempo = 1000
+
+}else if(nivel === 'cn'){
+    criaMoscaTempo = 750
+
+}
+
 function ajustaTamanhoTela(){
     altura = window.innerHeight
     largura = window.innerWidth
     console.log(altura, largura)
 }
 ajustaTamanhoTela()
+
+var cronometro = setInterval(function(){
+    tempo--
+    if(tempo < 0 ){
+        clearInterval(cronometro)
+        clearInterval(criaMosca)
+       // alert('Vitória')
+       window.location.href ='vitoria.html'
+    } else{
+        document.getElementById('cronometro').innerHTML = tempo   
+    }
+}, 1000)
 
 
 
