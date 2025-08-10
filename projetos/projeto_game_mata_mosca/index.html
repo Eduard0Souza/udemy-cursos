@@ -9,7 +9,23 @@
 </head>
 <body onresize="ajustaTamanhoTela()">
 
-    <img class="mosca1" src="imagens/mosca.png"  alt="mosca desenhada">
+  <div class="painel">
+    <div class="vida">
+      <img src="imagens/coracao_vazio.png" alt="">
+      <img src="imagens/coracao_cheio.png" alt="">
+      <img src="imagens/coracao_cheio.png" alt="">
+    </div>
+    <div class="cronometro">
+      Tempo Restante:
+
+    </div>
+
+  </div>
+
+    <script>
+      setInterval(function(){posicaoMosca()},2000)
+        
+    </script>
     
 </body>
 </html>
