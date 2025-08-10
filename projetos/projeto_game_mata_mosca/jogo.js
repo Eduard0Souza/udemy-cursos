@@ -6,16 +6,19 @@ var tempo = 15
 var criaMoscaTempo = 1500
 
 var nivel = window.location.search
-nivel.replace('?','')
+nivel = nivel.replace('?','')
 
 if(nivel === 'normal'){
     criaMoscaTempo = 1500
+    
 
 }else if(nivel ==='dificil'){
     criaMoscaTempo = 1000
+     
 
 }else if(nivel === 'cn'){
     criaMoscaTempo = 750
+     
 
 }
 
