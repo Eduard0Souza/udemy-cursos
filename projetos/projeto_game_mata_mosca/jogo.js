@@ -1,6 +1,7 @@
 //coletando as dimensões da página
 var altura = 0
 var largura = 0
+var vidas = 1
 function ajustaTamanhoTela(){
     altura = window.innerHeight
     largura = window.innerWidth
@@ -14,6 +15,12 @@ function posicaoMosca(){
 //removendo elemento da tela
 if(document.getElementById('mosca')){
     document.getElementById('mosca').remove()
+    if(vidas >= 3){
+        alert('GAME OVER')
+    }else{
+        document.getElementById('v'+ vidas).src="imagens/coracao_vazio.png"
+        vidas++
+    }
 }
 
 var posicaox = Math.floor(Math.random() * (largura -100))

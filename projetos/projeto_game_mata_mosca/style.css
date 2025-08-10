@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 body{
-  background: url(imagens/bg.jpg) no-repeat;
-  cursor: url(imagens/mata_mosca.png), auto;  
-
+  background: url(imagens/bg.jpg);
+  
 }
 .mosca1{
   width: 50px;
